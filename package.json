@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "commit-lint": "commitlint --edit $1",
+    "dev": "next dev",
     "lint": "next lint",
-    "success-message": "node .husky/success-message.js",
     "prepare": "./node_modules/.bin/husky install",
-    "commit-lint": "commitlint --edit $1"
+    "start": "next start",
+    "success-message": "node .husky/success-message.js",
+    "typecheck": "tsc",
+    "verify-style": "npm run lint && npm run typecheck"
   },
   "dependencies": {
     "next": "11.1.0",

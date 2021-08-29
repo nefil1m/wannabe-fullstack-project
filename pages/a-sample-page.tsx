@@ -1,9 +1,10 @@
 const Page = () => {
-  const foo: string = 2;
+  const foo: number = 2;
 
   return (
-    <div>hello
-      asdasd
+    <div>
+      hello
+      {foo}
     </div>
   );
 }
